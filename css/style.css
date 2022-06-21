@@ -101,6 +101,10 @@ img, span, svg {
   text-align: center;
   margin-top: 48px;
   border-radius: 4px;
+  transition: 0.25s ease;
+}
+.hero .btnLEarnMore:hover {
+  opacity: 0.7;
 }
 .hero .imgBox {
   position: relative;
