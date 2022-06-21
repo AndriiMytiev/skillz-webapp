@@ -48,50 +48,40 @@ img, span, svg {
   margin: auto;
 }
 
-.hero {
-  background-color: var(--dark-blue);
+.contact_us {
+  background-color: var(--very-dark-blue);
   width: 100%;
-  height: 909px;
+  height: 664px;
   color: var(--light-gray);
   font-style: normal;
   font-weight: 400;
-  padding-top: 144px;
-  padding-left: 82px;
   display: flex;
   justify-content: space-between;
+  padding-right: 54px;
 }
-.hero .featuredCourse {
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.contact_us .wrapper {
+  margin-left: 48px;
 }
-.hero .featuredCourse:after {
+.contact_us h2 {
+  font-size: 44px;
+  line-height: 53px;
+  font-weight: 700;
+  margin-top: 142px;
+}
+.contact_us h2:after {
   display: block;
   width: 150px;
   height: 2px;
   background-color: var(--light-green);
   content: "";
-  margin-top: 7px;
+  margin-top: 16px;
 }
-.hero h1 {
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
-  margin-top: 59px;
-}
-.hero p {
+.contact_us p {
   font-size: 22px;
   line-height: 33px;
-  margin-top: 22px;
+  margin-top: 50px;
 }
-.hero .kathrynMurphy {
-  font-size: 17px;
-  line-height: 27px;
-  color: var(--gray);
-  margin-top: 22px;
-}
-.hero .btnLEarnMore {
+.contact_us .btnContactUs {
   color: var(--very-dark-blue);
   background-color: var(--light-green);
   padding: 16px 24px;
@@ -99,12 +89,8 @@ img, span, svg {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 46px;
   border-radius: 4px;
-}
-.hero .imgBox {
-  position: relative;
-  top: -40px;
 }
 
 /*# sourceMappingURL=style.css.map */
