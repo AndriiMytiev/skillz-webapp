@@ -17,7 +17,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
     width: 100%;  
   }
 img{
@@ -26,13 +25,11 @@ img{
 }
 .zag{
   text-align: center;
-  color:#f1f1f1;
 }
 .text{
   margin:auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  color:#f1f1f1;
   max-width: 684px;
   width:100%;
 
@@ -42,7 +39,7 @@ img{
  background-color: rgb(87, 217, 166);
  margin: 0 auto;
  display:block;
- width:150px;
+ width:200px;
  height: 30px;
  border-radius: 5px;
 }
