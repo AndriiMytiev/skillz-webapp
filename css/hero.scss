@@ -49,42 +49,50 @@ img, span, svg {
   margin: auto;
 }
 
-.contact_us{
-  background-color: var(--very-dark-blue);
+.hero{
+  background-color: var(--dark-blue);
   width: 100%;
-  height: 664px;
+  height: 909px;
   color: var(--light-gray);
   font-style: normal;
   font-weight: 400;
+  padding-top: 144px;
+  padding-left: 82px;
   display: flex;
   justify-content: space-between;
-  padding-right: 54px;
 
-  .wrapper{
-    margin-left: 48px;
-  }
-  h2{
-    font-size: 44px;
-    line-height: 53px;
-    font-weight: 700;
-    margin-top: 142px;
+  .featuredCourse{
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     &:after{
       display: block;
       width: 150px;
       height: 2px;
       background-color: var(--light-green);
       content: "";
-      margin-top: 16px;
+      margin-top: 7px;
     }
+  }
+  h1{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    margin-top: 59px;
   }
   p{
     font-size: 22px;
     line-height: 33px;
-    margin-top: 50px;
-    //width: 600px;
+    margin-top: 22px;
   }
-
-  .btnContactUs{
+  .kathrynMurphy{
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--gray);
+    margin-top: 22px;
+  }
+  .btnLEarnMore{
     color: var(--very-dark-blue);
     background-color: var(--light-green);
     padding: 16px 24px;
@@ -92,12 +100,11 @@ img, span, svg {
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-    margin-top: 46px;
+    margin-top: 48px;
     border-radius: 4px;
-    transition: 0.25s ease;
-
-    &:hover{
-      opacity: 0.7;
-    }
+  }
+  .imgBox{
+    position: relative;
+    top: -40px;
   }
 }
