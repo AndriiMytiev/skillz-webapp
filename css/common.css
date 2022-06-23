@@ -26,6 +26,15 @@ button {
     background: none;
     font: inherit;
     cursor: pointer;
+    display:block;
+}
+
+.button{
+    background-color: rgb(87, 217, 166);
+    margin: 0 auto;
+    width:150px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 img, svg {
