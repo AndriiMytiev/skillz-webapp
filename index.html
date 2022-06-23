@@ -9,17 +9,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/normalize.css">
 </style>
 </head>
 <body>
-<h2 class="zag">Featured Courses</h2>
-<hr class="line" width="150" size="2" color="green" />  
-<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-<button class="button">View All Courses</button>
+<header class="header">
+    <div class="leftBlock">
+        <img src="./img/header/logo.png" alt="logo">
+    </div>
+    <div class="centerBlock">
+        <ul class="navigation">
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="rightBlock">
+        <img src="./img/header/basket.png" alt="basket" width="56">
+    </div>
+</header>
+<main>
+    <div class="container hero">
+        <div class="wrapper">
+            <span class="featuredCourse">featured course</span>
+            <h1>Run your own online <br>learning platform</h1>
+            <p>A deep-dive on the Instagram algorythm, hashtags, content <br>strategy, and branding.</p>
+            <span class="kathrynMurphy">Kathryn Murphy</span>
+            <button class="btnLEarnMore">learn more</button>
+        </div>
+        <div class="imgBox">
+            <img src="./img/hero.png" alt="Hero">
+        </div>
+    </div>
+    <section class="featured">
+        <h2 class="zag">Featured Courses</h2>
+        <hr class="line" width="150" size="2" color="green"/>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.</p>
+        <button class="button">View All Courses</button>
+    </section>
+
 <!-- <div class="container">
   <div class="row">
     <div class="column">
@@ -41,7 +76,7 @@
       <h5>learn more</h5>
       </div>
     </div>
-  
+
     <div class="column">
       <div class="card">
       <img src="./images/com.png">
@@ -53,35 +88,12 @@
     </div>
   </div>
 </div> -->
-    <div class="container hero">
-        <div class="wrapper">
-            <span class="featuredCourse">featured course</span>
-            <h1>Run your own online <br>learning platform</h1>
-            <p>A deep-dive on the Instagram algorythm, hashtags, content <br>strategy, and branding.</p>
-            <span class="kathrynMurphy">Kathryn Murphy</span>
-            <button class="btnLEarnMore">learn more</button>
-        </div>
-        <div class="imgBox">
-            <img src="./img/hero.png" alt="Hero">
-        </div>
-    </div>
-    <header>
-        <div class="leftBlock"> 
-            <img src="./img/header/logo.png" alt="logo">
-        </div>
-        <div class="centerBlock"> 
-            <ul class="navigation">
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="rightBlock"> 
-            <img src="./img/header/basket.png" alt="basket">
-        </div>
-    </header>
-    <script src="./index.js" type="module"></script>
+
+
+</main>
+<footer>
+
+</footer>
+<script src="./index.js" type="module"></script>
 </body>
 </html>
