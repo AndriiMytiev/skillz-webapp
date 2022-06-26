@@ -1,0 +1,141 @@
+.slicer {
+    background-color: #57D9A6;
+    width: 100%;
+    height: 600px;
+}
+
+.slicer-content {
+    margin: auto;
+    width: 1020px;
+    height: 346px;
+    padding-top: 80px;
+}
+
+.stars-box{
+    width: fit-content;
+    margin: auto;
+}
+
+.stars li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.star {
+    margin: 50px 0; 
+    height: 0; 
+    width: 0;
+    position: relative;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #222222;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+    opacity: 40%;
+    }
+    .star:before, 
+    .star:after {
+    content: "";
+    height: 0; 
+    width: 0;
+    position: absolute;
+    }
+    .star:before {
+    top: -26px; 
+    left: -32px;
+    border-bottom: 40px solid #222222;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(-35deg);
+    }
+    .star:after {
+    top: 2px; 
+    left: -53px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #222222;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    }
+
+.slicer-text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-style: Italic;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1C1C33;
+}
+
+.writer{
+    color: #4E4E65;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 50px;
+}
+
+.slicer-buttons {
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.sbutton {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #222222;
+    opacity: 40%;
+}
+
+.active {
+    opacity: 100%;
+}
+
+.someInfo {
+    background-color: #1C1C33;    
+    width: 100%;
+    height: 840px;
+}
+
+.someInfo-content {
+    width: 1276px;
+    height: 540px;
+    margin: auto;
+    padding-top: 130px;
+}
+
+.someInfo-img {
+    float: left;
+}
+
+.someInfo-text {
+    width: 600px;
+    height: 540px;
+    float: right;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.stext {
+    margin: 50px 0 50px 0;
+    font-size: 22px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 44px;
+    margin: 100px 0 20px 0;
+}
+
+.about-button {
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(87, 217, 166);
+    width: 175px;
+    height: 59px;
+    border-radius: 5px;
+}
+
+.about-line {
+    margin: 0 0 0 0;
+}
