@@ -1,0 +1,120 @@
+.footer {
+  margin: auto;
+
+  .sendEmail {
+    margin: auto;
+    width: 1280px;
+    background-color: var(--light-green);
+    color: var(--very-dark-blue);
+    position: relative;
+    z-index: 10;
+    top: 173px;
+
+    .sendEmail-content {
+      padding-top: 78px;
+      padding-bottom: 95px;
+      align-items: center;
+
+      p{
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 53px;
+        text-align: center;
+      }
+
+      .sendEmail-input-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 57px;
+
+        .sendEmail-input {
+          width: 400px;
+          height: 64px;
+          background-color: var(--light-green);
+          color: black;
+          border: 1px solid black;
+          border-radius: 5px;
+          padding-left: 20px;
+        }
+
+        .sendEmail-button {
+          margin-left: 20px;
+          width: 116px;
+          height: 64px;
+          background-color: var(--very-dark-blue);
+          color: var(--light-green);
+          font-size: 20px;
+          font-weight: bold;
+          //font-family: 'Source Sans Pro', sans-serif;
+          border: 1px solid black;
+          border-radius: 5px;
+          &:hover{
+            transition: 0.25s ease;
+            background-color: var(--light-green);
+            color: var(--very-dark-blue);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-navigation {
+    margin: auto;
+    padding-top: 318px;
+    background-color: var(--very-dark-blue);
+
+    .footer-content {
+      max-width: 1280px;
+
+      .menu{
+        display: flex;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--light-gray);
+        margin-top: 82px;
+        ul{
+          margin-right: 230px;
+          li{
+            margin-bottom: 16px;
+            &:first-of-type{
+              margin-bottom: 23px;
+            }
+            a:hover{
+              color: var(--light-green);
+              transition: 0.25s ease;
+            }
+          }
+          &:last-of-type li{
+            display: inline-block;
+            margin-right: 16px;
+            &:first-of-type{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-line {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    background-color: var(--dark-blue);
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 1280px;
+
+    p{
+      margin-top: 16px;
+      margin-bottom: 16px;
+      &:first-of-type{
+        margin-right: 32px;
+      }
+    }
+  }
+}

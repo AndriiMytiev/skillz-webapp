@@ -1,3 +1,16 @@
+:root {
+    /*variable*/
+    /*colors*/
+    --light-green: #57D9A6;
+    --dark-blue: #23233B;
+    --very-dark-blue: #1C1C33;
+    --gray: #B2B2BF;
+    --light-gray: #F6F6F8;
+    --red:  #FC5468;
+    /*spacing*/
+    --px: 20px;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -30,10 +43,10 @@ button {
 }
 
 .button{
-    background-color: rgb(87, 217, 166);
+    background-color: var(--light-green);
     margin: 0 auto;
-    width:150px;
-    height: 30px;
+    /*width:150px;*/
+    /*height: 30px;*/
     border-radius: 5px;
 }
 

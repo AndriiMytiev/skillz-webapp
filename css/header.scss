@@ -1,38 +1,54 @@
-.header {
-  display: flex;
+header {
+  background-color: var(--very-dark-blue);
   width: 100%;
-  background-color: #1C1C33;
-}
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.centerBlock {
-  width: fit-content;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .wrapper {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    color: var(--light-gray);
 
-.leftBlock {
-  float: left;
-  width: fit-content;
-  position: absolute;
-  top: 30px;
-  left: 50px;
-}
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 18px;
 
-.rightBlock {
-  float: right;
-  width: fit-content;
-  position: absolute;
-  top: 20px;
-  right: 100px;
-}
+      &:hover {
+        color: var(--light-green);
+        transition: 0.25s ease;
+      }
+    }
 
-.navigation li {
-  color: #F6F6F8;
-  display: inline-block;
-  margin-right: 30px;
-  font-size: 18px;
+    .rightBlock {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+
+      path {
+        //fill: green;
+      }
+
+      .numItemsInCart{
+        background-color: var(--red);
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        padding: 6px;
+        font-size: 11px;
+        line-height: 11px;
+        position: relative;
+        top: -40px;
+        left: 20px;
+        display: block;
+      }
+    }
+
+  }
 }
 
 .line{

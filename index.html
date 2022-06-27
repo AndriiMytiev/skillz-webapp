@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillz</title>
+<!--</head>-->
     <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
@@ -19,24 +15,34 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/featured.css">
-    </style>
+    <link rel="stylesheet" href="css/upcomingWorkshops.css">
+    <link rel="stylesheet" href="css/feedBack.css">
+    <link rel="stylesheet" href="css/recent.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-<header class="header">
-    <div class="leftBlock">
-        <img src="./img/header/logo.png" alt="logo">
-    </div>
-    <div class="centerBlock">
-        <ul class="navigation">
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <div class="rightBlock">
-        <img src="./img/header/basket.png" alt="basket" width="56">
+<header>
+    <div class="wrapper">
+        <div class="leftBlock">
+            <img src="./img/header/logo.png" alt="logo">
+        </div>
+        <div class="centerBlock">
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightBlock">
+<!--            <img src="./img/header/basket.png" alt="basket" width="56">-->
+<!--            <img src="./img/cart-shopping-solid.svg" alt="shopping_cart" width="32" height="32">-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path fill="#FFFFFF" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/>
+            </svg>
+            <span class="numItemsInCart">0</span>
+        </div>
     </div>
 </header>
 <main>
@@ -44,7 +50,7 @@
         <div class="wrapper">
             <span class="featuredCourse">featured course</span>
             <h1>Run your own online <br>learning platform</h1>
-            <p>A deep-dive on the Instagram algorythm, hashtags, content <br>strategy, and branding.</p>
+            <p>A deep-dive on the Instagram algorithm, hashtags, content <br>strategy, and branding.</p>
             <span class="kathrynMurphy">Kathryn Murphy</span>
             <button class="btnLEarnMore">learn more</button>
         </div>
@@ -52,13 +58,10 @@
             <img src="./img/hero.png" alt="Hero">
         </div>
     </div>
-    <section class="featured">
-        <h2 class="zag">Featured Courses</h2>
-        <hr class="line" width="150" size="2" color="#57D9A6"/>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.</p>
-        <button class="button">View All Courses</button>
+    <section class="container featured">
+        <span class="zag">Featured Courses</span>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <button class="button btnViewAll">View All Courses</button>
     </section>
     <div class="container contact_us">
         <div class="imgBox">
@@ -71,55 +74,97 @@
         </div>
     </div>
 
-<!-- <div class="container">
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="./images/IMAGE.svg">
-                <h2>How to Increase Your Engagement on Instagram</h2>
-                <h6>Katie Murphy</h6>
-                <h4>$ 59.99 USD</h4>
-                <h5>learn more</h5>
+    <section class="container upcoming">
+        <span class="zag">Upcoming Free Workshops</span>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <button class="button btnViewAll">View All Workshops</button>
+    </section>
+
+
+    <section class="container feedBack">
+        <div class="wrapper">
+            <span class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+            </span>
+            <p>
+                “Kate’s courses are a game changer. She’s thorough, organized, and explains things in a no-nonsense way that makes it easy for anyone—beginners to experts—to learn something from her courses and take their game to the next level.”
+            </p>
+            <span>James Brown, Influencer</span>
         </div>
-    </div>
 
-    <div class="column">
-      <div class="card">
-      <img src="./images/compt.png">
-      <h2>Business 101: Setting up Your Taxes</h2>
-      <h6>Bessie Cooper</h6>
-      <h4>$ 69.99 USD $ 39.99 USD</h4>
-      <h5>learn more</h5>
-      </div>
-    </div>
+    </section>
 
-    <div class="column">
-      <div class="card">
-      <img src="./images/com.png">
-      <h2>iPhone Photography: Tips, Tricks and Best Practices</h2>
-      <h6>Dianne Russell</h6>
-      <h4>$ 69.99 USD $ 39.99 USD</h4>
-      <h5>learn more</h5>
-      </div>
-    </div>
-  </div>
-</div> -->
-<section>
-    <h2 class="zag">Upcoming Free Workshops</h2>
-    <hr class="line" width="150" size="2" color="#57D9A6" />  
+
+    <section class="container passion">
+        <div class="imgBox">
+            <img src="./img/passion.png" alt="Passion">
+        </div>
+        <div class="wrapper">
+            <h2>A Passion for Teaching</h2>
+            <p>A deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.</p>
+            <button class="btnAboutSkills">About Skillz</button>
+        </div>
+    </section>
+
+
+    <section class="container recent">
+    <span class="zag">Recent Articles</span>
     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-    <button class="button">View All Workshops</button>
-</section>
-<section>
-    <h2 class="zag">Recent Articles</h2>
-    <hr class="line" width="150" size="2" color="#57D9A6" />  
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-    <button class="button">View all articles</button>
+    <button class="button btnViewAll">View all articles</button>
 </section>
 </main>
-<footer>
+<footer class="footer">
+    <div class="sendEmail">
+        <div class="sendEmail-content">
+            <p>You have the power to define your future.</p>
+            <div class="sendEmail-input-box">
+                <input type="email" name="email" id="email" class="sendEmail-input" placeholder="EMAIL ADDRESS">
+                <button type="button" name="email" class="sendEmail-button">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-navigation">
+        <div class=" container footer-content">
+            <img src="./img/footer/logo.png" alt="logo">
+            <div class="menu">
+                <ul>
+                    <li>LEARNING PLATFORM</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Free Workshops</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>TEMPLATE</li>
+                    <li><a href="#">Instuctions</a></li>
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Licenses</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+                <ul>
+                    <li>FOLLOW SKILLZ</li>
+                    <li><img src="./img/footer/twitter.png" alt="twitter"></li>
+                    <li><img src="./img/footer/facebook.png" alt="facebook"></li>
+                    <li><img src="./img/footer/tiktok.png" alt="tiktok"></li>
+                    <li><img src="./img/footer/instagram.png" alt="instagram"></li>
+                    <li><img src="./img/footer/youtube.png" alt="youtube"></li>
+                </ul>
 
+            </div>
+        </div>
+    </div>
+    <div class="container bottom-line">
+        <p>© Skillz Template</p>
+        <p>Powered by Webflow</p>
+    </div>
 </footer>
+<!--<script src="https://kit.fontawesome.com/0148f7d94a.js" crossorigin="anonymous"></script>-->
 <script src="./index.js" type="module"></script>
 </body>
 </html>

@@ -1,53 +1,54 @@
 //font-family: 'Source Sans Pro', sans-serif;
 
-:root {
-  /*variable*/
-  /*colors*/
+/*:root {
+  !*variable*!
+  !*colors*!
   --light-green: #57D9A6;
   --dark-blue: #23233B;
   --very-dark-blue: #1C1C33;
   --gray: #B2B2BF;
   --light-gray: #F6F6F8;
-  /*spacing*/
+  !*spacing*!
   --px: 20px;
-}
+}*/
+
 /*reset*/
-*, *::before, *::after {
+/**, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}*/
 
 li {
   list-style: none;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: inherit;
-}
+}*/
 
-button {
+/*button {
   border: none;
   background: none;
   font: inherit;
   cursor: pointer;
-}
+}*/
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
   scroll-behavior: smooth;
 }
 
-img, span, svg {
+/*img, span, svg {
   display: block;
-}
+}*/
 
 /*MAIN*/
-.container{
+/*.container{
   max-width: 1440px;
   margin: auto;
-}
+}*/
 
 .hero{
   background-color: var(--dark-blue);
@@ -102,6 +103,11 @@ img, span, svg {
     text-align: center;
     margin-top: 48px;
     border-radius: 4px;
+    transition: 0.25s ease;
+    &:hover{
+      color: var(--light-gray);
+      transition: 0.25s ease;
+    }
   }
   .imgBox{
     position: relative;
@@ -109,7 +115,7 @@ img, span, svg {
   }
 }
 
-.contact_us{
+.contact_us, .passion{
   background-color: var(--very-dark-blue);
   width: 100%;
   height: 664px;
@@ -144,7 +150,11 @@ img, span, svg {
     //width: 600px;
   }
 
-  .btnContactUs{
+  .passion p{
+    max-width: 548px;
+  }
+
+  .btnContactUs, .btnAboutSkills{
     color: var(--very-dark-blue);
     background-color: var(--light-green);
     padding: 16px 24px;
@@ -155,9 +165,9 @@ img, span, svg {
     margin-top: 46px;
     border-radius: 4px;
     transition: 0.25s ease;
-
     &:hover{
-      opacity: 0.7;
+      color: var(--light-gray);
+      transition: 0.25s ease;
     }
   }
 }
