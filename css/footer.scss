@@ -89,8 +89,13 @@
           &:last-of-type li{
             display: inline-block;
             margin-right: 16px;
+            transition: 0.25s ease;
             &:first-of-type{
               display: block;
+            }
+            &:hover{
+              transform: scale(1.1);
+              transition: 0.25s ease;
             }
           }
         }
