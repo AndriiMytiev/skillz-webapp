@@ -1,4 +1,6 @@
 export default{
-    // modal: 
+    overlay: document.querySelector('.overlay'), 
+    content: document.querySelector('.content'),
+
     
 }
