@@ -1,53 +1,47 @@
-:root {
-  /*variable*/
-  /*colors*/
+/*:root {
+  !*variable*!
+  !*colors*!
   --light-green: #57D9A6;
   --dark-blue: #23233B;
   --very-dark-blue: #1C1C33;
   --gray: #B2B2BF;
   --light-gray: #F6F6F8;
-  /*spacing*/
+  !*spacing*!
   --px: 20px;
-}
-
+}*/
 /*reset*/
-*, *::before, *::after {
+/**, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
+}*/
 li {
   list-style: none;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: inherit;
-}
-
-button {
+}*/
+/*button {
   border: none;
   background: none;
   font: inherit;
   cursor: pointer;
-}
-
+}*/
 html {
   font-family: "Source Sans Pro", sans-serif;
   scroll-behavior: smooth;
 }
 
-img, span, svg {
+/*img, span, svg {
   display: block;
-}
-
+}*/
 /*MAIN*/
-.container {
+/*.container{
   max-width: 1440px;
   margin: auto;
-}
-
+}*/
 .hero {
   background-color: var(--dark-blue);
   width: 100%;
@@ -101,13 +95,18 @@ img, span, svg {
   text-align: center;
   margin-top: 48px;
   border-radius: 4px;
+  transition: 0.25s ease;
+}
+.hero .btnLEarnMore:hover {
+  color: var(--light-gray);
+  transition: 0.25s ease;
 }
 .hero .imgBox {
   position: relative;
   top: -40px;
 }
 
-.contact_us {
+.contact_us, .passion {
   background-color: var(--very-dark-blue);
   width: 100%;
   height: 664px;
@@ -118,16 +117,16 @@ img, span, svg {
   justify-content: space-between;
   padding-right: 54px;
 }
-.contact_us .wrapper {
+.contact_us .wrapper, .passion .wrapper {
   margin-left: 48px;
 }
-.contact_us h2 {
+.contact_us h2, .passion h2 {
   font-size: 44px;
   line-height: 53px;
   font-weight: 700;
   margin-top: 142px;
 }
-.contact_us h2:after {
+.contact_us h2:after, .passion h2:after {
   display: block;
   width: 150px;
   height: 2px;
@@ -135,12 +134,15 @@ img, span, svg {
   content: "";
   margin-top: 16px;
 }
-.contact_us p {
+.contact_us p, .passion p {
   font-size: 22px;
   line-height: 33px;
   margin-top: 50px;
 }
-.contact_us .btnContactUs {
+.contact_us .passion p, .passion .passion p {
+  max-width: 548px;
+}
+.contact_us .btnContactUs, .contact_us .btnAboutSkills, .passion .btnContactUs, .passion .btnAboutSkills {
   color: var(--very-dark-blue);
   background-color: var(--light-green);
   padding: 16px 24px;
@@ -152,8 +154,9 @@ img, span, svg {
   border-radius: 4px;
   transition: 0.25s ease;
 }
-.contact_us .btnContactUs:hover {
-  opacity: 0.7;
+.contact_us .btnContactUs:hover, .contact_us .btnAboutSkills:hover, .passion .btnContactUs:hover, .passion .btnAboutSkills:hover {
+  color: var(--light-gray);
+  transition: 0.25s ease;
 }
 
 /*# sourceMappingURL=hero.css.map */

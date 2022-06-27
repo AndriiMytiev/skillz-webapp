@@ -1,13 +1,15 @@
-.featured {
+.upcoming {
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
+  padding-top: 142px;
+  background-color: #F5F5F5;
 
   .zag {
     font-size: 44px;
     line-height: 53px;
     font-weight: 700;
-    color: var(--light-gray);
+    color: #1C1C33;
     text-align: center;
     position: relative;
 
@@ -26,7 +28,7 @@
   .text {
     font-size: 22px;
     line-height: 33px;
-    color: var(--light-gray);
+    color: #4E4E65;
     max-width: 684px;
     width: 100%;
     text-align: center;

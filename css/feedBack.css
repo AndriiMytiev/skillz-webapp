@@ -1,0 +1,38 @@
+.feedBack {
+  padding: 80px 200px;
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+}
+.feedBack .wrapper {
+  max-width: 1020px;
+}
+.feedBack .wrapper .stars {
+  display: flex;
+  justify-content: center;
+}
+.feedBack .wrapper .stars svg {
+  width: 32px;
+  height: 32px;
+  padding-right: 4px;
+}
+.feedBack .wrapper p {
+  margin-top: 43px;
+  text-align: center;
+  max-width: 1000px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+}
+.feedBack .wrapper span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4E4E65;
+  text-align: center;
+  display: block;
+  margin-top: 37px;
+}
+
+/*# sourceMappingURL=feedBack.css.map */
