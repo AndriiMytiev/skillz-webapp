@@ -24,7 +24,7 @@ header {
     }
 
     .rightBlock {
-      svg {
+      svg {             //Иконка корзины
         width: 32px;
         height: 32px;
       }
@@ -33,7 +33,7 @@ header {
         //fill: green;
       }
 
-      .numItemsInCart{
+      .numItemsInCart{   //цифра для количество позиций в корзине
         background-color: var(--red);
         border-radius: 50%;
         height: 20px;
@@ -57,13 +57,13 @@ header {
   padding: 0;
 }
 
-.column {
+/*.column {
   float: left;
   width:25%;
   padding: 0 10px;
-}
+}*/
 
-.card {
+/*.card {
   margin: 0 auto;
   display: block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -71,16 +71,16 @@ header {
   text-align: center;
   background-color: #f1f1f1;
   width: 100%;
-}
+}*/
 
-.zag{
+/*.zag{
   text-align: center;
   color:#f1f1f1;
-}
+}*/
 .text{
-  margin:auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
+  /*margin-top: 50px;
+  margin-bottom: 50px;*/
   color:#f1f1f1;
   max-width: 684px;
   width:100%;

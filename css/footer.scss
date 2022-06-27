@@ -78,7 +78,7 @@
           margin-right: 230px;
           li{
             margin-bottom: 16px;
-            &:first-of-type{
+            &:first-of-type{        /*Между заголовком колонки и элементом меню*/
               margin-bottom: 23px;
             }
             a:hover{
@@ -86,16 +86,17 @@
               transition: 0.25s ease;
             }
           }
-          &:last-of-type li{
+          &:last-of-type li{      /*Выстроить иконки соц сетей в строку*/
             display: inline-block;
             margin-right: 16px;
             transition: 0.25s ease;
-            &:first-of-type{
-              display: block;
-            }
             &:hover{
               transform: scale(1.1);
               transition: 0.25s ease;
+            }
+            &:first-of-type{
+              display: block;   /*Заголовок колонки, под которым иконки соц сетей*/
+              transform: none;  /*Не применять hover к заголовку колонки*/
             }
           }
         }
