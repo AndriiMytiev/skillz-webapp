@@ -1,2 +1,2 @@
-import data from './data/db.json'
-console.log(data);
+import './js/courses.js'
+
