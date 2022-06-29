@@ -1,1 +1,1 @@
-import './js/modalForCartIcon.js'
+import './js/modalForCartIcon.js';
