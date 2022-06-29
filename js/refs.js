@@ -3,6 +3,7 @@ export default{
 
     btnLearnMore: document.querySelector(".btnLEarnMore"),
     btnAboutSkills: document.querySelector(".btnAboutSkills"),
+    modal: document.querySelector(".modal"),
+    modalWrap: document.querySelector(".modal-wrap"),
 
-    stars: document.querySelectorAll('svg'),
 };
