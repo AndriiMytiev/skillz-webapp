@@ -4,11 +4,13 @@ export default{
     btnLearnMore: document.querySelector(".btnLEarnMore"),
     btnAboutSkills: document.querySelector(".btnAboutSkills"),
     modal: document.querySelector(".modal"),
+    modalAbout: document.querySelector('.modalAbout'),
     modalWrap: document.querySelector(".modal-wrap"),
+    modalAboutWrap: document.querySelector(".modalAbout-wrap"),
     hero:document.querySelector(".hero"),
     btnCloseModal: document.querySelector(".closeModal"),
 
-    /*act:document.querySelector(".active"),*/
+    act:document.querySelector(".active"),
     feedBack: document.querySelector(".feedBack"),
     feedbackContent: document.querySelector(".feedbackContent"),
     feedbackAuthor: document.querySelector(".feedbackAuthor"),
