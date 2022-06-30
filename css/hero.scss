@@ -114,66 +114,72 @@ html {
     position: relative;
     top: -40px;
   }
+}
 
-  .modal{
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
+.modal{
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  overflow-x: hidden;
+  background-color: rgba(31, 32, 41, 0.75);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms 700ms ease;
+
+  .modal-wrap{
+    position: relative;
+    display: block;
     width: 100%;
-    height: 100%;
-    z-index: 15;
-    overflow-x: hidden;
-    background-color: rgba(31, 32, 41, 0.75);
-    pointer-events: none;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: var(--dark-blue);
+    align-self: center;
+    box-shadow: 0 12px 25px 0 rgba(199, 175, 189, 0.25);
     opacity: 0;
-    transition: opacity 250ms 700ms ease;
+    transform: scale(0.6);
+    transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
 
-    .modal-wrap{
-      position: relative;
-      display: block;
-      width: 100%;
-      max-width: 400px;
-      margin: 20px auto;
-      border-radius: 4px;
-      overflow: hidden;
-      padding-bottom: 20px;
-      background-color: var(--dark-blue);
-      align-self: center;
-      box-shadow: 0 12px 25px 0 rgba(199, 175, 189, 0.25);
-      opacity: 0;
-      transform: scale(0.6);
-      transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
-
-      p{
-        padding: 20px 30px 0 30px;
+    p{
+      padding: 20px 30px 0 30px;
+      &:first-of-type{
+        text-align: center;
       }
     }
-    .closeModal{
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      z-index: 110;
-      width: 40px;
-      border-radius: 3px;
-      border: none;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 18px;
-      color: #102770;
-      background-color: #ffeba7;
-      box-shadow: 0 12px 25px 0 rgba(16, 39, 112, 0.25);
-      transition: all 200ms linear;
-      //opacity: 1;
-      cursor: pointer;
-      &:hover{
-        background-color: #102770;
-        color: #ffeba7;
-      }
+    //p .nonactive{
+    //  display: none;
+    //}
+  }
+  .closeModal{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 110;
+    width: 40px;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #102770;
+    background-color: #ffeba7;
+    box-shadow: 0 12px 25px 0 rgba(16, 39, 112, 0.25);
+    transition: all 200ms linear;
+    //opacity: 1;
+    cursor: pointer;
+    &:hover{
+      background-color: #102770;
+      color: #ffeba7;
     }
   }
 }
