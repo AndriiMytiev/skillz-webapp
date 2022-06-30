@@ -1,28 +1,45 @@
-import data from './courses.js';
+import data from '../data/courses.js';
+import refs from './refs.js';
 
-const zag = `<h2>Posts:</h2>
-                   <ul id="cours">
-                   </ul>`;
+const {overlay, content} = refs;
 
-document.getElementById("card").insertAdjacentHTML("afterbegin", zag);
+const newElement = `<div class='coursesListBlock'>
+                        <ul class='courseList'></u>
+                    </div>`;
 
-const ul = document.getElementById('cours');
+document.getElementById('courses').insertAdjacentHTML('beforeend', newElement);
 
-function createElement(data) { // отримуємо масив даних
-      return data.map(element => { // перебираємо його
-          let tags = element.tags.map(tag => {
-              return `<li>${tag}</li>`;
-            }).join(''); // створюємо розмітку з тегами
-          return `<li>
-          <img src="${element.image}" alt="${element.id}">
-                    <p>${element.label}</p>
-                    <h3>${element.tutor}</h3>
-                    <h2>"${element.prices}"</h2>
-                    <h3>"${element.linkLabel}"</h3>
-
-                </li>`;
-        }).join(''); // повертаємо готову розмітку елементу разом з тегами
+for(let i = 0; i < 3; i++){
+    let listElement = createElement(i);
+    document.querySelector('.courseList').insertAdjacentHTML('beforeend', listElement);
 }
-const list = createElement(data); // викликаємо функцію генерації розмітки
-ul.insertAdjacentHTML('afterbegin', list); // додаємо розмітку в DOM
 
+function createElement(id){
+    return `<li class='${data[id].id}'>
+                <img src='${data[id].image}' width='393px'>
+                <div class="paddingText">
+                <p class="label">${data[id].label}</p>
+                <p>${data[id].tutor}</p>
+                <p class="price">${data[id].prices.regularPrice}</p>
+                <button type='button' class='buttonMore'>${data[id].linkLabel}</button>
+                </div>
+            </li>`
+}
+
+
+
+
+
+
+//modalwindow
+//function createModalList(data) { 
+    // return data.map((el) => {
+        // return `<li class='${el.id}'>
+                    // <img src='${el.image}' width='200px'>
+                    // <p>${el.prices.regularPrice}</p>
+                    // <p>${el.label}</p>
+                    // <p>${el.tutor}</p>
+                    // <button type='button'>${el.linkLabel}</button>
+                // </li>`
+        // }).join(''); 
+// }

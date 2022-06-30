@@ -1,0 +1,45 @@
+.courseList li {
+ display: inline-block;
+ background-color: aliceblue;
+ width:  393px;
+ margin-right: 80px; 
+ margin-top:0;
+ vertical-align: top;
+ height:430px;
+
+}
+
+.courseList{
+   width: fit-content;
+}
+.coursesListBlock{
+    margin: auto;
+    margin-top: 10px;
+}
+
+.courseList li:last-child{
+    margin-right:0; 
+}
+
+
+.label{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.tutor{
+    font-size: 17px;
+    margin-top: 15px;
+}
+.price{
+    color:gray;
+    font-size:20px;
+    margin-top: 15px;
+}
+.buttonMore{
+    color:gray;
+    font-size:20px;
+    margin-top: 15px;
+}
+.paddingText{
+padding: 0px 30px 30px 30px;
+}
