@@ -1,0 +1,87 @@
+header {
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  .wrapper {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    color: var(--light-gray);
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 18px;
+
+      &:hover {
+        color: var(--light-green);
+        transition: 0.25s ease;
+      }
+    }
+
+    .rightBlock {
+      svg {             //Иконка корзины
+        width: 32px;
+        height: 32px;
+      }
+
+      path {
+        //fill: green;
+      }
+
+      .numItemsInCart{   //цифра для количество позиций в корзине
+        background-color: var(--red);
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        padding: 6px;
+        font-size: 11px;
+        line-height: 11px;
+        position: relative;
+        top: -40px;
+        left: 20px;
+        display: block;
+      }
+    }
+
+  }
+}
+
+.line{
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*.column {
+  float: left;
+  width:25%;
+  padding: 0 10px;
+}*/
+
+/*.card {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 100%;
+}*/
+
+/*.zag{
+  text-align: center;
+  color:#f1f1f1;
+}*/
+.text{
+  margin: 50px auto;
+  /*margin-top: 50px;
+  margin-bottom: 50px;*/
+  color:#f1f1f1;
+  max-width: 684px;
+  width:100%;
+}

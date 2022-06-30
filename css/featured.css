@@ -1,0 +1,46 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.featured .zag {
+  font-size: 44px;
+  line-height: 53px;
+  font-weight: 700;
+  color: var(--light-gray);
+  text-align: center;
+  position: relative;
+}
+.featured .zag:after {
+  display: block;
+  position: absolute;
+  left: 45%;
+  width: 150px;
+  height: 2px;
+  background-color: var(--light-green);
+  content: "";
+  margin-top: 17px;
+}
+.featured .text {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--light-gray);
+  max-width: 684px;
+  width: 100%;
+  text-align: center;
+}
+.featured .btnViewAll {
+  color: var(--very-dark-blue);
+  text-transform: uppercase;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  transition: 0.25s ease;
+}
+.featured .btnViewAll:hover {
+  color: var(--light-gray);
+  transition: 0.25s ease;
+}
+
+/*# sourceMappingURL=featured.css.map */

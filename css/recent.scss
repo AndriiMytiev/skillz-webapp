@@ -1,0 +1,50 @@
+.recent {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+  padding-top: 142px;
+  background-color: #F5F5F5;
+
+  .zag {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 700;
+    color: #1C1C33;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      display: block;
+      position: absolute;
+      left: 45%;
+      width: 150px;
+      height: 2px;
+      background-color: var(--light-green);
+      content: "";
+      margin-top: 17px;
+    }
+  }
+
+  .text {
+    font-size: 22px;
+    line-height: 33px;
+    color: #4E4E65;
+    max-width: 684px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btnViewAll{
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    padding: 16px 24px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    transition: 0.25s ease;
+    &:hover{
+      color: var(--light-gray);
+      transition: 0.25s ease;
+    }
+  }
+}

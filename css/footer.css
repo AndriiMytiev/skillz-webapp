@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.footer {
+  margin: auto;
+}
+.footer .sendEmail {
+  margin: auto;
+  width: 1280px;
+  background-color: var(--light-green);
+  color: var(--very-dark-blue);
+  position: relative;
+  z-index: 10;
+  top: 173px;
+}
+.footer .sendEmail .sendEmail-content {
+  padding-top: 78px;
+  padding-bottom: 95px;
+  align-items: center;
+}
+.footer .sendEmail .sendEmail-content p {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+  text-align: center;
+}
+.footer .sendEmail .sendEmail-content .sendEmail-input-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 57px;
+}
+.footer .sendEmail .sendEmail-content .sendEmail-input-box .sendEmail-input {
+  width: 400px;
+  height: 64px;
+  background-color: var(--light-green);
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.footer .sendEmail .sendEmail-content .sendEmail-input-box .sendEmail-button {
+  margin-left: 20px;
+  width: 116px;
+  height: 64px;
+  background-color: var(--very-dark-blue);
+  color: var(--light-green);
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.footer .sendEmail .sendEmail-content .sendEmail-input-box .sendEmail-button:hover {
+  transition: 0.25s ease;
+  background-color: var(--light-green);
+  color: var(--very-dark-blue);
+}
+.footer .footer-navigation {
+  margin: auto;
+  padding-top: 318px;
+  background-color: var(--very-dark-blue);
+}
+.footer .footer-navigation .footer-content {
+  max-width: 1280px;
+}
+.footer .footer-navigation .footer-content .menu {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--light-gray);
+  margin-top: 82px;
+}
+.footer .footer-navigation .footer-content .menu ul {
+  margin-right: 230px;
+}
+.footer .footer-navigation .footer-content .menu ul li {
+  margin-bottom: 16px;
+}
+.footer .footer-navigation .footer-content .menu ul li:first-of-type {
+  /*Между заголовком колонки и элементом меню*/
+  margin-bottom: 23px;
+}
+.footer .footer-navigation .footer-content .menu ul li a:hover {
+  color: var(--light-green);
+  transition: 0.25s ease;
+}
+.footer .footer-navigation .footer-content .menu ul:last-of-type li {
+  /*Выстроить иконки соц сетей в строку*/
+  display: inline-block;
+  margin-right: 16px;
+  transition: 0.25s ease;
+}
+.footer .footer-navigation .footer-content .menu ul:last-of-type li:hover {
+  transform: scale(1.1);
+  transition: 0.25s ease;
+}
+.footer .footer-navigation .footer-content .menu ul:last-of-type li:first-of-type {
+  display: block;
+  /*Заголовок колонки, под которым иконки соц сетей*/
+  transform: none;
+  /*Не применять hover к заголовку колонки*/
+}
+.footer .bottom-line {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  background-color: var(--dark-blue);
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 1280px;
+}
+.footer .bottom-line p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.footer .bottom-line p:first-of-type {
+  margin-right: 32px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -5,14 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillz</title>
+<!--</head>-->
+<!--    <link rel="stylesheet" href="./styles/style.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/featured.css">
+    <link rel="stylesheet" href="css/upcomingWorkshops.css">
+    <link rel="stylesheet" href="css/feedBack.css">
+    <link rel="stylesheet" href="css/recent.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+<header>
+    <div class="wrapper">
+        <div class="leftBlock">
+            <img src="./img/header/logo.png" alt="logo">
+        </div>
+        <div class="centerBlock">
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightBlock">
+<!--            <img src="./img/header/basket.png" alt="basket" width="56">-->
+<!--            <img src="./img/cart-shopping-solid.svg" alt="shopping_cart" width="32" height="32">-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path fill="#FFFFFF" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/>
+            </svg>
+            <span class="numItemsInCart">0</span>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container hero">
+        <div class="wrapper">
+            <span class="featuredCourse">featured course</span>
+            <h1>Run your own online <br>learning platform</h1>
+            <p>A deep-dive on the Instagram algorithm, hashtags, content <br>strategy, and branding.</p>
+            <span class="kathrynMurphy">Kathryn Murphy</span>
+            <button class="btnLEarnMore">learn more</button>
+        </div>
+        <div class="imgBox">
+            <img src="./img/hero.png" alt="Hero">
+        </div>
+        <div class="modal">
+            <button class="closeModal" type="button"><i class="fas fa-times"></i></button>
+            <div id="idHero" class="modal-wrap">
+                <p>LEARN MORE</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur dicta earum facere fugiat itaque neque nihil unde! Est, repudiandae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis eveniet harum laudantium obcaecati optio pariatur, praesentium quod rerum vero voluptates voluptatibus. Ad aliquam autem blanditiis dicta et placeat sint.</p>
+            </div>
+        </div>
+    </div>
+    <section class="container featured" id="courses">
+        <span class="zag">Featured Courses</span>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <button class="button btnViewAll">View All Courses</button>
+    </section>
     <div class="container contact_us">
         <div class="imgBox">
             <img src="./img/contact_us.png" alt="Contact_us">
@@ -23,6 +83,109 @@
             <button class="btnContactUs">contact us</button>
         </div>
     </div>
-    <script src="./index.js" type="module"></script>
+
+    <section class="container upcoming" id="workshops">
+        <span class="zag">Upcoming Free Workshops</span>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <button class="button btnViewAll">View All Workshops</button>
+    </section>
+
+
+    <section class="container feedBack" id="blog">
+        <div class="wrapper">
+            <div class="owl-carousel" id="feedback">
+                <div>
+                    <p class="feedbackContent">
+                        “Kate’s courses are a game changer. She’s thorough, organized, and explains things in a
+                        no-nonsense way that makes it easy for anyone—beginners to experts—to learn something from her
+                        courses and take their game to the next level.”
+                    </p>
+                    <span class="feedbackAuthor">
+                James Brown, Influencer
+            </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container passion" id="about">
+        <div class="imgBox">
+            <img src="./img/passion.png" alt="Passion">
+        </div>
+        <div class="wrapper">
+            <h2>A Passion for Teaching</h2>
+            <p>A deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.</p>
+            <button class="btnAboutSkills">About Skillz</button>
+        </div>
+        <div class="modalAbout">
+            <button class="closeModal" type="button"><i class="fas fa-times"></i></button>
+            <div id="idAbout" class="modalAbout-wrap">
+                <p>ABOUT SKILLZ</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur dicta earum facere fugiat itaque neque nihil unde! Est, repudiandae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis eveniet harum laudantium obcaecati optio pariatur, praesentium quod rerum vero voluptates voluptatibus. Ad aliquam autem blanditiis dicta et placeat sint.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container recent">
+    <span class="zag">Recent Articles</span>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+    <button class="button btnViewAll">View all articles</button>
+</section>
+</main>
+<footer class="footer">
+    <div class="sendEmail">
+        <div class="sendEmail-content">
+            <p>You have the power to define your future.</p>
+            <div class="sendEmail-input-box">
+                <input type="email" name="email" id="email" class="sendEmail-input" placeholder="EMAIL ADDRESS">
+                <button type="button" name="email" class="sendEmail-button">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-navigation" id="contact">
+        <div class=" container footer-content">
+            <img src="./img/footer/logo.png" alt="logo">
+            <div class="menu">
+                <ul>
+                    <li>LEARNING PLATFORM</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Free Workshops</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>TEMPLATE</li>
+                    <li><a href="#">Instuctions</a></li>
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Licenses</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+                <ul>
+                    <li>FOLLOW SKILLZ</li>
+                    <li><a href="#" target="_blank"><img src="./img/footer/twitter.png" alt="twitter"></a></li> 
+                    <li><a href="#" target="_blank"><img src="./img/footer/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="./img/footer/tiktok.png" alt="tiktok"></a></li> 
+                    <li><a href="#" target="_blank"><img src="./img/footer/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="./img/footer/youtube.png" alt="youtube"></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container bottom-line">
+        <p>© Skillz Template</p>
+        <p>Powered by Webflow</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0148f7d94a.js" crossorigin="anonymous"></script>
+<script src="./js/owl.carousel.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./index.js" type="module"></script>
 </body>
 </html>
