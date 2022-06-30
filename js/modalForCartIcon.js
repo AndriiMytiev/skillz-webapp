@@ -39,7 +39,7 @@ window.addEventListener('keydown', (event) => {
 // create new block for content 
 function createElementOfContent(data){
     return `<div class='cartModalContent'>
-                <р class='errorTitle'>${data.title}</p>
+                <p class='errorTitle'>${data.title}</p>
                 <img src='${data.image}' width='400px' alt='error'>
                 <p class='errorText'>${data.text}</p>
                 <p class='errorAuthor'>${data.author}</p>
