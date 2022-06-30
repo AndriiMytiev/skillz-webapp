@@ -1,5 +1,8 @@
 export default{
-    // modal: 
+    overlay: document.querySelector('.overlay'), 
+    content: document.querySelector('.content'),
+
+    cartBtn: document.getElementById('cart'),
 
     btnLearnMore: document.querySelector(".btnLEarnMore"),
     btnAboutSkills: document.querySelector(".btnAboutSkills"),

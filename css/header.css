@@ -72,4 +72,7 @@ header .wrapper .rightBlock .numItemsInCart {
   width: 100%;
 }
 
+#cart {
+  cursor: pointer;
+}
 /*# sourceMappingURL=header.css.map */
