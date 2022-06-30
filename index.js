@@ -1,2 +1,2 @@
-import './js/courses.js'
-
+import './data/courses.js'
+import './js/cors.js'
