@@ -51,6 +51,7 @@ button {
 }
 
 img, svg {
+    object-fit: contain;
     display: block;
 }
 
