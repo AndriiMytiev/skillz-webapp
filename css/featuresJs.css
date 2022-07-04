@@ -11,6 +11,7 @@
 
 .courseList{
    width: fit-content;
+   margin-top:80px;
 }
 .coursesListBlock{
     margin: auto;
@@ -28,7 +29,7 @@
 }
 .tutor{
     font-size: 17px;
-    margin-top: 15px;
+    margin-top: 15px;   
 }
 .price{
     color:gray;
@@ -42,4 +43,22 @@
 }
 .paddingText{
 padding: 0px 30px 30px 30px;
+}
+.closeModalBtn {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.courseModalList li{
+    display: inline-block;
+    flex-direction: row;
+    width:  393px;
+    height:390px;
+    margin-right: 70px;
+    margin-top: 30px;
 }
