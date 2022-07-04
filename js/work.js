@@ -35,7 +35,7 @@ function createElement(id){
  openModal.addEventListener('click', () => {
     content.style.width="fit-content";
     content.style.height="fit-content";
-    overlay.workshopList.remove('ifHidden')  
+    overlay.classList.remove('ifHidden')  
    document.querySelector('.content').insertAdjacentHTML('afterbegin', newModalElement);
    const list =  createModalList(data);
    document.querySelector('.workshopModalList').insertAdjacentHTML('beforeend', list);
@@ -43,7 +43,7 @@ function createElement(id){
 
  overlay.addEventListener("click", (event) =>{
    if(
-     event.target.workshopList.contains('overlay') ){ overlay.workshopList.add('ifHidden');
+     event.target.workshopList.contains('overlay') ){ overlay.classList.add('ifHidden');
      content.removeChild(document.querySelector('.workshopModalBlock'));
      content.removeAttribute('style');
   }})
