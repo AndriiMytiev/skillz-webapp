@@ -15,7 +15,6 @@
 }
 .coursesListBlock{
     margin: auto;
-    margin-top: 10px;
 }
 
 .courseList li:last-child{
@@ -54,11 +53,20 @@ padding: 0px 30px 30px 30px;
     padding: 10px;
     cursor: pointer;
 }
+.courseModalList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    height: 100%;
+}
 .courseModalList li{
     display: inline-block;
     flex-direction: row;
     width:  393px;
     height:390px;
-    margin-right: 70px;
-    margin-top: 30px;
+    margin: 30px;
+}
+.coursesModalBlock{
+    height:100%;
 }
