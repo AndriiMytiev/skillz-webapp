@@ -3,10 +3,13 @@ export default{
 
     btnLearnMore: document.querySelector(".btnLEarnMore"),
     btnAboutSkills: document.querySelector(".btnAboutSkills"),
+    btnContactUs: document.querySelector(".btnContactUs"),
     modal: document.querySelector(".modal"),
     modalAbout: document.querySelector('.modalAbout'),
     modalWrap: document.querySelector(".modal-wrap"),
     modalAboutWrap: document.querySelector(".modalAbout-wrap"),
+    modalContactUs: document.querySelector(".modalContactUs"),
+    modalContactUsWrap: document.querySelector(".modalContactUs-wrap"),
     hero:document.querySelector(".hero"),
     btnCloseModal: document.querySelector(".closeModal"),
 

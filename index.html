@@ -82,6 +82,17 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urnaLorem ipsum dolor sit amet.</p>
             <button class="btnContactUs">contact us</button>
         </div>
+        <div class="modalContactUs">
+            <button class="closeModal" type="button"><i class="fas fa-times"></i></button>
+            <div id="contactUs" class="modalContactUs-wrap">
+                <p>CONTACT US</p>
+                <form action="post">
+                    <label for="phone">Leave your phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+38(050)123-45-67" pattern="+[0-9]{2}([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    <button type="button" name="tel" class="btnLeaveTelNumber">SUBMIT</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <section class="container upcoming" id="workshops">
