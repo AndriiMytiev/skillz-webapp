@@ -2,6 +2,10 @@ export default{
     overlay: document.querySelector('.overlay'), 
     content: document.querySelector('.content'),
 
+    emailInput: document.querySelector('.sendEmail-input'),
+    sendEmailBlock: document.querySelector('.sendEmail-content'),
+    emailButton: document.querySelector('.sendEmail-button'),
+
     cartBtn: document.getElementById('cart'),
 
     btnLearnMore: document.querySelector(".btnLEarnMore"),
@@ -25,3 +29,4 @@ export default{
     star2:document.getElementById('star-2'),
     star1:document.getElementById('star-1'),
 };
+

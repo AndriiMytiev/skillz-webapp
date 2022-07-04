@@ -5,6 +5,7 @@
 .footer .sendEmail {
   margin: auto;
   width: 1280px;
+  height: 368px;
   background-color: var(--light-green);
   color: var(--very-dark-blue);
   position: relative;
@@ -183,4 +184,18 @@
   color: #B2B2BF;
   display: inline-block;
 } 
+
+.sendEmail-input {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.emailErrorMesage {
+  margin-left: 30%;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 /*# sourceMappingURL=footer.css.map */
