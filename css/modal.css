@@ -21,3 +21,10 @@
     height: 500px;
     transform: translate(-50%, -50%);
 }
+
+.toShowModalContent {
+    background-color: white;
+    width: 450px;
+    height: fit-content;
+    border-radius: 5%;
+}
