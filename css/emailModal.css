@@ -1,0 +1,25 @@
+.emailModalContent {
+    width: 400px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+.emailModalTitle {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.emailModalText {
+    margin: 20px 0 50px 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 200%;
+}
+
+.emailModalAuthor {
+    font-size: 16px;
+    text-align: right;
+    font-style: italic;
+}

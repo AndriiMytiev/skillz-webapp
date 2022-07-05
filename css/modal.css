@@ -13,11 +13,22 @@
 }
 
 .content {
-    background-color: aliceblue;
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 800px;
     height: 500px;
     transform: translate(-50%, -50%);
+    overflow: auto;
+    border-radius: 5%;
+}
+.content.toShowModalContent {
+    width: 450px;
+    height: fit-content;
+}
+.content.overflowModal{
+    width: 100%;
+    max-width:1200px;
+    height: 50%;
 }
