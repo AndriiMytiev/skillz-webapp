@@ -20,7 +20,7 @@ openModal.addEventListener("click", () => {
 overlay.addEventListener("click", (event) => {
   if (event.target.classList.contains("overlay")) {
     overlay.classList.add("ifHidden");
-    content.removeChild(document.querySelector(".coursesModalList"));
+    content.innerHTML = "";
   }
 });
 function createItem(el) {
