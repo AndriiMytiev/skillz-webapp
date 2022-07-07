@@ -1,4 +1,6 @@
 import refs from "./refs.js";
+import createEmailModal from "./helpers/createModalContent.js";
+import hideModal from "./helpers/hideModalWindow.js"
 
 const {overlay, content, emailInput, emailButton, sendEmailBlock} = refs;
 
@@ -38,41 +40,24 @@ emailInput.addEventListener('input', () => {
 // open modal window by click on button
 emailButton.addEventListener('click', () => {
     overlay.classList.remove('ifHidden');
-    content.style.background = 'white';
-    content.style.width = '450px';
-    content.style.height = 'fit-content';
-    content.style.borderRadius = '5%';
+    content.classList.add('toShowModalContent');
     if(getcheckValue(emailInput, emailPattern)){
-        content.insertAdjacentHTML("afterbegin", createModalContent(successfulMessage));
+        content.insertAdjacentHTML("afterbegin", createEmailModal(successfulMessage, 'emailModalContent', 'emailModalTitle', 'emailModalText', 'emailModalAuthor'));
         document.querySelector('.emailModalText').innerHTML += `<b>${emailInput.value}</b>`;
-    } else content.insertAdjacentHTML("afterbegin", createModalContent(errorMessage));
+    } else content.insertAdjacentHTML("afterbegin", createEmailModal(errorMessage, 'emailModalContent', 'emailModalTitle', 'emailModalText', 'emailModalAuthor'));
 })
 
 // hide modal window by click on overlay or press escape button
 overlay.addEventListener('click', (event) => {
-    event.target.classList.contains('overlay') && hideModalWindow();
+    event.target.classList.contains('overlay') && hideModal('emailModalContent');
+    emailInput.value = '';
 })
 
 window.addEventListener('keydown', (event) => {
-    event.code === 'Escape' && hideModalWindow();
+    event.code === 'Escape' && hideModal('emailModalContent');
+    emailInput.value = '';
 })
 
 function getcheckValue(input, pattern){
     return input.value.match(new RegExp(pattern));
 };
-
-function hideModalWindow(){
-    overlay.classList.add('ifHidden');
-    content.removeChild(document.querySelector('.emailModalContent'));
-    content.removeAttribute('style');
-    emailInput.value = '';
-}
-
-function createModalContent(data){
-    return `<div class='emailModalContent'>
-                <p class='emailModalTitle'>${data.title}</p>
-                <img src='${data.image}' width='300px' alt='img' class='emailModalImage'>
-                <p class='emailModalText'>${data.text}</p>
-                <p class='emailModalAuthor'>${data.author}</p>
-            </div>`
-}

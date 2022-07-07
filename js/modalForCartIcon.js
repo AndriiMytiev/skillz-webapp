@@ -1,4 +1,6 @@
 import refs from "./refs.js";
+import createCartModal from "./helpers/createModalContent.js";
+import hideModal from "./helpers/hideModalWindow.js"
 
 const {overlay, content, cartBtn} = refs;
 
@@ -12,36 +14,15 @@ const errorMessage = {
 // to show modal window by click on cart icon
 cartBtn.addEventListener('click', () => {
     overlay.classList.remove('ifHidden');
-    content.insertAdjacentHTML("afterbegin", createElementOfContent(errorMessage));
-    content.style.background = 'white';
-    content.style.width = '450px';
-    content.style.height = 'fit-content';
-    content.style.borderRadius = '5%';
+    content.classList.add('toShowModalContent');
+    content.insertAdjacentHTML("afterbegin", createCartModal(errorMessage, 'cartModalContent', 'errorTitle', 'errorText', 'errorAuthor'));
 })
 
 // to hide modal window by click on overlay or press escape button
 overlay.addEventListener('click', (event) => {
-    if(event.target.classList.contains('overlay')){
-        overlay.classList.add('ifHidden'); 
-        content.removeAttribute('style');
-        content.removeChild(document.querySelector('.cartModalContent'));
-    }
+    event.target.classList.contains('overlay') && hideModal('cartModalContent');
 })
 
 window.addEventListener('keydown', (event) => {
-    if(event.code === 'Escape'){
-        overlay.classList.add('ifHidden');
-        content.removeChild(document.querySelector('.cartModalContent'));
-        content.removeAttribute('style');
-    }
+    event.code === 'Escape' && hideModal('cartModalContent');
 })
-
-// create new block for content 
-function createElementOfContent(data){
-    return `<div class='cartModalContent'>
-                <p class='errorTitle'>${data.title}</p>
-                <img src='${data.image}' width='400px' alt='error'>
-                <p class='errorText'>${data.text}</p>
-                <p class='errorAuthor'>${data.author}</p>
-            </div>`
-}
