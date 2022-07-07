@@ -28,5 +28,6 @@ export default{
     star3:document.getElementById('star-3'),
     star2:document.getElementById('star-2'),
     star1:document.getElementById('star-1'),
+    recentBlock: document.querySelector(".recentListBlock"),
 };
 
