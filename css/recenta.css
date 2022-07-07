@@ -34,21 +34,8 @@
        margin-top: 10px;
    }
 
-   .buttonMore{
-       color:gray;
-       font-size:20px;
-       margin-top: 15px;
-   }
    .paddingText{
    padding: 0px 30px 30px 30px;
-   }
-   .recentModalList li{
-       display: inline-block;
-       flex-direction: row;
-       width:  393px;
-       height:390px;
-       margin-right: 70px;
-       margin-top: 30px;
    }
    .recentModalList {
     display: flex;
@@ -63,11 +50,6 @@
     font-family: Source Sans Pro;
     font-size: 20px;
 }
-  .buttonMore {
-    color: gray;
-    font-size: 20px;
-    margin-top: 15px;
-  }
   .paddingText {
     padding: 0px 30px 30px 30px;
   }
