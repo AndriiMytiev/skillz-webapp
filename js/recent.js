@@ -1,8 +1,10 @@
 import data from '../data/articles.js';
+import createListMarkup from "./helpers/createList.js";
 import refs from './refs.js';
 
-const {overlay, content, recentBlock} = refs;
+const {overlay, content, recentBlock } = refs;
 const previewArray = data.slice(0, 3);
+console.log(previewArray)
 const previewList = createListMarkup(previewArray, createItem, "recentList");
 recentBlock.insertAdjacentHTML("afterbegin", previewList);
 const openModal = document.querySelector(".button.btnViewAllR");
