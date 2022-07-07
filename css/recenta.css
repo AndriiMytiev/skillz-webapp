@@ -9,18 +9,28 @@
     padding: 10px;
    }
    
-   .recentList{
-      width: fit-content;
+   .recentList {
+    width: fit-content;
       margin-top:80px;
    }
    .recentListBlock{
-       margin: auto;
+     margin: auto;
    }
    
    .recentList li:last-child{
        margin-right:0; 
    }
-   .recentModalList li {
+  
+   
+   .label{
+       font-size: 30px;
+       margin-top: 20px;
+   }
+
+   .paddingText{
+   padding: 0px 30px 30px 30px;
+   }
+ .recentModalList li {
     display: inline-block;
     flex-direction: row;
     width: 393px;
@@ -28,28 +38,16 @@
     margin-right: 70px;
     margin-top: 30px;
   }
-   
-   .label{
-       font-size: 24px;
-       margin-top: 10px;
-   }
-
-   .paddingText{
-   padding: 0px 30px 30px 30px;
-   }
-   .recentModalList {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    overflow-y: scroll;
-    height: 100%;
-  }
 .button.btnViewAllR{
     width:247px;
     height:59px;
     font-family: Source Sans Pro;
     font-size: 20px;
 }
-  .paddingText {
-    padding: 0px 30px 30px 30px;
+   .recentModalList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    height: 100%;
   }
