@@ -9,12 +9,13 @@
     padding: 10px;
    }
    
-   .recentList{
-      width: fit-content;
+   .recentList ul{
+    height: fit-content;
       margin-top:80px;
    }
    .recentListBlock{
-       margin: auto;
+      display:flex;
+      flex-direction: row;
    }
    
    .recentList li:last-child{

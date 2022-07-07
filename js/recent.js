@@ -4,7 +4,6 @@ import refs from './refs.js';
 
 const {overlay, content, recentBlock } = refs;
 const previewArray = data.slice(0, 3);
-console.log(previewArray)
 const previewList = createListMarkup(previewArray, createItem, "recentList");
 recentBlock.insertAdjacentHTML("afterbegin", previewList);
 const openModal = document.querySelector(".button.btnViewAllR");
@@ -23,7 +22,6 @@ overlay.addEventListener("click", (event) => {
 
 function createItem(el){
   return `<li class='${el.id}'>
-  <h1>${el.title}</h1>
   <img src="${el.image}" width="373px">
   <p>${el.label}</p>
    <p>${el.author}</p>
